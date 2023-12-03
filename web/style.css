@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
+
+html, body {
+    margin: 0;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #0A0E1A;
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+    overflow-x: auto;
+}
+
+h1 {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #0A0E1A;
+    margin: 0;
+}
+
+.block-main {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.block-2 {
+    width: 100%;
+    padding: 0;
+    gap: 20px;
+    box-sizing: border-box;
+}
+
+.block-mini-1 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-sizing: border-box;
+}
+
+.gray {
+    color: rgba(10, 14, 26, 0.60);
+}
+
+.img {
+    height: 28px;
+    width: 28px;
+}
+
+Header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.block-text {
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #F8F9FB;
+    box-sizing: border-box;
+}
+
+input {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    padding: 8px 12px;
+    border-radius: 8px;
+    background-color: #F8F9FB;
+    border: none;
+    outline: none;
+    font-weight: 500;
+}
+
+button {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    padding: 8px 12px;
+    border-radius: 8px;
+    background-color: white;
+    border: #F7B239 solid 2px;
+    color: #F7B239;
+    outline: none;
+    font-weight: 500;
+    transition-duration: 300ms;
+}
+button:hover {
+    background-color: #F7B239;
+    color: #0A0E1A;
+}
+
+p {
+    margin: 0;
+    max-width: 100%;
+    word-wrap: break-word;
+}
+
+.block-mini-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+}

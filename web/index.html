@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Крутое приложение</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="\img\cookie.svg"/>
+</head>
+<body>
+    <div class="block-main">
+        <Header>
+            <div class="block-mini-1">
+                <img src="img/cookie.svg" alt="cookie" class="img">
+                <h1><a href="https://t.me/Mars_Lucifer" target="_blank">Mars Lucifer</a> <span class="gray">&</span> <a href="https://t.me/Just_a_second" target="_blank">bisskimly</a></h1>
+            </div>
+            <h1><a href="https://youtu.be/d7D0YAiR6QY" target="_blank">GitHub</a></h1>
+        </Header>
+        <div class="block-main block-2">
+            <p class="block-text">Это программа для вычисления последовательности Коллатца, которая направлена на вычисление числовой последовательности, начиная с введенного числа, применяя следующее правило: если число четное, оно делится на 2, если число нечетное, умножается на 3 и добавляется 1. Функция возвращает список чисел этой последовательности.</p>
+            <div class="block-mini-2">
+                <input type="number" placeholder="Введите число" id="inputField" required>
+                <button onclick="clickButton()">Расчитать</button>
+            </div>
+            <p id="text">Результат</p>
+        </div>
+    </div>
+
+
+
+    <script src="eel.js"></script>
+    <script>
+        async function clickButton() {
+            const input = document.getElementById("inputField").value;
+            const result = await eel.col(input)();
+            const text = document.getElementById('text');
+            console.log(text)
+            if ((result == "Ошибка ввода данных") || (result == "Можно использовать только положительные числа")) {
+                text.style.color = "red";
+                text.innerText = result;
+            }
+            else {
+                console.log(result)
+                text.style.color = "#0A0E1A";
+                text.innerText = result;
+            }
+        }
+    </script>
+</body>
+</html>
